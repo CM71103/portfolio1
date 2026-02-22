@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.N.L.P ChandraMouli | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0b0f1a;
+            --text: #e2e8f0;
+            --accent: #38bdf8;
+            --card-bg: #161e2d;
+            --border: #1e293b;
+        }
+        body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; margin: 0; }
+        .container { max-width: 850px; margin: 0 auto; padding: 2rem; }
+        
+        header { padding: 3rem 0; border-bottom: 1px solid var(--border); }
+        h1 { font-size: 2.8rem; margin: 0; color: #fff; letter-spacing: -1px; }
+        .contact-line { color: var(--accent); font-family: 'Fira Code', monospace; margin: 0.5rem 0; font-size: 0.9rem; }
+        
+        .section-title { font-size: 1.5rem; color: var(--accent); margin-top: 3rem; border-bottom: 2px solid var(--border); display: inline-block; padding-bottom: 5px; text-transform: uppercase; }
+        
+        .edu-card, .project-card { background: var(--card-bg); padding: 1.5rem 2rem; border-radius: 12px; margin: 1.5rem 0; border: 1px solid var(--border); }
+        .project-card { border-left: 4px solid var(--accent); transition: 0.3s; }
+        .project-card:hover { border-color: var(--accent); transform: translateY(-3px); }
+        
+        .project-header { display: flex; justify-content: space-between; align-items: baseline; }
+        .tech-stack { font-family: 'Fira Code', monospace; color: var(--accent); font-size: 0.85rem; margin-bottom: 1rem; }
+        
+        .stat-item { background: #1e293b; padding: 5px 12px; border-radius: 6px; font-size: 0.9rem; border: 1px solid #334155; display: inline-block; }
+        .badge { background: #0ea5e920; color: var(--accent); padding: 4px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: bold; border: 1px solid var(--accent); }
+        
+        .contact-box { background: linear-gradient(135deg, #1e293b, #0f172a); padding: 2.5rem; border-radius: 12px; text-align: center; margin-top: 4rem; border: 1px solid var(--accent); }
+        .btn { background: var(--accent); color: #000; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; display: inline-block; margin-top: 1rem; }
+        
+        ul { padding-left: 20px; color: #94a3b8; }
+        li { margin-bottom: 8px; }
+        strong { color: #fff; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>A.N.L.P ChandraMouli</h1>
+        <p class="contact-line">Vizag, AP • chandramouli.allamaraju@gmail.com</p>
+       <p style="color: #94a3b8; max-width: 650px;">
+    <strong>3rd Year CSE Student</strong> with a strong foundation in backend engineering and algorithm design. 
+    Experienced in building optimized systems using BCNF-based database modeling, Bloom Filters, Tries, 
+    and DAA techniques including Dynamic Programming, Greedy algorithms, and Backtracking.
+</p>
+    </header>
+
+    <h2 class="section-title">Education</h2>
+    <div class="edu-card">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+            <div>
+                <h3 style="margin: 0;">Amrita Vishwa Vidyapeetham, Coimbatore</h3>
+                <p style="margin: 5px 0; color: var(--accent);">B.Tech in Computer Science and Engineering</p>
+            </div>
+            <div style="text-align: right; color: #94a3b8;">Class of 2028</div>
+        </div>
+       <div style="margin-top: 10px;">
+    <div class="stat-item"><strong>Current Year:</strong> 2nd Year (Sophomore)</div>
+    <div class="stat-item"><strong>CGPA:</strong> 9.05</div>
+    <div class="stat-item"><strong>Semester 3 SGPA:</strong> 9.43</div>
+</div>
+    </div>
+
+    <h2 class="section-title">Technical Projects</h2>
+
+    <div class="project-card">
+        <div class="project-header">
+            <h3>Canteen Management System</h3>
+            <span class="badge">Database Engineering</span>
+        </div>
+        <div class="tech-stack">PostgreSQL • SQL • BCNF Normalization</div>
+        <p>A relational database project focused on eliminating data anomalies and ensuring strict transactional integrity.</p>
+        
+        <ul>
+            <li>Normalized schema to <strong>Boyce-Codd Normal Form (BCNF)</strong> to maintain 100% data consistency.</li>
+            <li>Optimized query performance for real-time inventory and order processing.</li>
+        </ul>
+    </div>
+
+    <div class="project-card">
+        <div class="project-header">
+            <h3>Advanced Search Engine</h3>
+            <span class="badge">Java / DSA</span>
+        </div>
+        <div class="tech-stack">Java • Bloom Filters • Tries • Prefix Arrays</div>
+        <p>Highly efficient search engine implementation focusing on minimizing memory footprint and lookup time.</p>
+        
+        <ul>
+            <li>Implemented <strong>Bloom Filters</strong> for constant-time membership checking.</li>
+            <li>Utilized <strong>Tries</strong> for $O(L)$ prefix retrieval and constraint-based filtering.</li>
+        </ul>
+    </div>
+    <div class="project-card">
+    <div class="project-header">
+        <h3>Connect 4 – DAA Implementation</h3>
+        <span class="badge">Design & Analysis of Algorithms</span>
+    </div>
+    <div class="tech-stack">Java • Dynamic Programming • Greedy • Backtracking</div>
+    <p>Strategic game implementation applying core Design and Analysis of Algorithms concepts for optimal move computation.</p>
+    
+    <ul>
+        <li>Applied <strong>Backtracking</strong> for game state exploration and move validation.</li>
+        <li>Used <strong>Dynamic Programming</strong> principles to optimize repeated state evaluation.</li>
+        <li>Implemented <strong>Greedy heuristics</strong> for near-optimal move selection under constraints.</li>
+        <li>Designed efficient board evaluation strategy to minimize time complexity.</li>
+    </ul>
+</div>
+
+    <div class="contact-box">
+        <h2>Let's Work Together</h2>
+        <p>I'm looking for backend or data-oriented internship opportunities.</p>
+        <a href="mailto:chandramouli.allamaraju@gmail.com" class="btn">Contact Me</a>
+    </div>
+
+</div>
+
+</body>
+</html>
